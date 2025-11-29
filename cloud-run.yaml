@@ -1,0 +1,11 @@
+# This file is in the YAML format required by Google Cloud Run.
+GOOGLE_API_KEY: "AIzaSyCcI4KtIlq89Swhxktuafotk139ufG-1JQ"
+REDIS_HOST: "10.52.0.3"
+REDIS_PORT: "6379"
+REDIS_PASSWORD: ""
+CLINIC_NAME: "MediSync Health Center"
+CLINIC_ADDRESS: "Lilavati Hospital, Bandra West, Mumbai, Maharashtra, India"
+CLINIC_CONTACT: "+91-22-2656-7000"
+DEBUG_MODE: "true"
+LOG_LEVEL: "INFO"
+ENVIRONMENT: "development"

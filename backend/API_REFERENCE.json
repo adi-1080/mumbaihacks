@@ -1,0 +1,93 @@
+{
+  "appointments": {
+    "book": {
+      "method": "POST",
+      "url": "http://localhost:3000/api/v1/appointments/book",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": "John Doe",
+        "contact_number": "+91-9876543210",
+        "symptoms": "Fever and cough for 3 days",
+        "location": "Andheri, Mumbai",
+        "age": 35,
+        "gender": "Male",
+        "emergency_level": "NORMAL"
+      },
+      "description": "Book a new appointment"
+    },
+    "get": {
+      "method": "GET",
+      "url": "http://localhost:3000/api/v1/appointments/1",
+      "description": "Get appointment details by token number"
+    },
+    "cancel": {
+      "method": "DELETE",
+      "url": "http://localhost:3000/api/v1/appointments/1",
+      "description": "Cancel appointment"
+    },
+    "updateLocation": {
+      "method": "PATCH",
+      "url": "http://localhost:3000/api/v1/appointments/1/location",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "latitude": 19.0760,
+        "longitude": 72.8777,
+        "address": "Andheri, Mumbai"
+      },
+      "description": "Update patient location"
+    },
+    "complete": {
+      "method": "POST",
+      "url": "http://localhost:3000/api/v1/appointments/1/complete",
+      "description": "Mark consultation as completed (Doctor only)"
+    }
+  },
+  "queue": {
+    "getStatus": {
+      "method": "GET",
+      "url": "http://localhost:3000/api/v1/queue",
+      "description": "Get current queue status with all patients"
+    },
+    "getCurrentToken": {
+      "method": "GET",
+      "url": "http://localhost:3000/api/v1/queue/current-token",
+      "description": "Get current token number"
+    },
+    "getPosition": {
+      "method": "GET",
+      "url": "http://localhost:3000/api/v1/queue/position/1",
+      "description": "Get queue position for specific token"
+    },
+    "getETAs": {
+      "method": "GET",
+      "url": "http://localhost:3000/api/v1/queue/etas",
+      "description": "Get calculated ETAs for all patients"
+    },
+    "getOngoing": {
+      "method": "GET",
+      "url": "http://localhost:3000/api/v1/queue/ongoing",
+      "description": "Get ongoing consultations"
+    },
+    "getStats": {
+      "method": "GET",
+      "url": "http://localhost:3000/api/v1/queue/stats",
+      "description": "Get clinic statistics"
+    }
+  },
+  "health": {
+    "check": {
+      "method": "GET",
+      "url": "http://localhost:3000/health",
+      "description": "Health check endpoint"
+    },
+    "apiDocs": {
+      "method": "GET",
+      "url": "http://localhost:3000/api/v1",
+      "description": "API documentation"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+# Environment Variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.env
+
+# Markdown files (except README.md)
+*.md
+!README.md
+
+# Dependencies
+node_modules/
+**/node_modules/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Python Virtual Environments
+venv/
+.venv/
+**/venv/
+**/.venv/
+ENV/
+env/
+**/ENV/
+**/env/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Cache
+.cache/
+.parcel-cache/
+.npm
+.eslintcache
+
+# Testing
+coverage/
+.nyc_output/
+*.coverage
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Firebase (ALL Firebase admin SDK files should be ignored)
+*-firebase-adminsdk-*.json
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!API_REFERENCE.json
+
+# Python
+*.py[cod]
+__pycache__/
+*.so
+.Python
+venv/
+ENV/
+env/
+*.broken
+
+# Redis
+dump.rdb
